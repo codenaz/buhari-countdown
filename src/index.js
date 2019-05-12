@@ -1,6 +1,8 @@
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './scss/app.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

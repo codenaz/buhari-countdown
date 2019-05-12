@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.heading {
+  font-size: 40px;
+  margin: 1rem 1rem;
+
+  @include respond('md-ld') {
+    font-size: 35px;
+  }
+
+  @include respond('sm') {
+    font-size: 30px;
+  }
+
+  @include respond('xs') {
+    font-size: 25px;
+  }
+}
+
+.countdown {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.time__unit {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin: 1rem 0;
+  padding: 1.5rem;
+
+  .time {
+    font-size: 42px;
+  }
+
+  .unit {
+    font-size: 36px;
+  }
+
+  @include respond('md-lg') {
+    flex-basis: 33.3%;
+
+    .time {
+      font-size: 36px;
+    }
+
+    .unit {
+      font-size: 30px;
+    }
+  }
+
+  @include respond('sm') {
+    flex-basis: 33.3%;
+
+    .time {
+      font-size: 30px;
+    }
+
+    .unit {
+      font-size: 24px;
+    }
+  }
+
+  @include respond('xs') {
+    flex-basis: 50%;
+    padding: 1rem;
+
+    .time {
+      font-size: 24px;
+    }
+
+    .unit {
+      font-size: 20px;
+    }
+  }
+}
+
+.bottom__emoji {
+  font-size: 50px;
+}
+
+.footer {
+  font-size: 20px;
+  margin-bottom: 16px;
+
+  &__link {
+    color: #61dafb;
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import TextTransition, { presets } from 'react-text-transition';
 import moment from 'moment';
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
     const idealUnit = duration !== 1 ? `${unit}s` : unit;
     return (
       <>
-        <span className="time">{time}</span>
+        <TextTransition text={time} spring={presets.noWobble} className="time" />
+
         <span className="unit">{idealUnit}</span>
       </>
     );

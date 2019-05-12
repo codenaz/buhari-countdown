@@ -56,6 +56,11 @@ body {
 
   .time {
     font-size: 42px;
+    .text-transition-inner {
+      align-self: center;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   .unit {
@@ -64,11 +69,9 @@ body {
 
   @include respond('md-lg') {
     flex-basis: 33.3%;
-
     .time {
       font-size: 36px;
     }
-
     .unit {
       font-size: 30px;
     }
@@ -76,11 +79,9 @@ body {
 
   @include respond('sm') {
     flex-basis: 33.3%;
-
     .time {
       font-size: 30px;
     }
-
     .unit {
       font-size: 24px;
     }
@@ -89,11 +90,9 @@ body {
   @include respond('xs') {
     flex-basis: 50%;
     padding: 1rem;
-
     .time {
       font-size: 24px;
     }
-
     .unit {
       font-size: 20px;
     }
@@ -107,7 +106,6 @@ body {
 .footer {
   font-size: 20px;
   margin-bottom: 16px;
-
   &__link {
     color: #61dafb;
   }

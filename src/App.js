@@ -5,17 +5,13 @@ import moment from "moment";
 
 ReactGA.initialize('G-WMK4HE7N2W');
 
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 function App() {
   const endDate = moment([2023, 4, 29]);
   const [countDown, setCountDown] = useState(
     moment.duration(endDate.diff(moment()))
   );
-
-  useEffect(() => {
-    if (typeof window !== `undefined`) {
-      ReactGA.pageview(window.location.pathname + window.location.search);
-    }
-  }, []);
 
   useEffect(() => {
     const id = setInterval(() => {

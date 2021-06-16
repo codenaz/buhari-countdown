@@ -3,7 +3,7 @@ import ReactGA, { OutboundLink } from "react-ga";
 import TextTransition, { presets } from "react-text-transition";
 import moment from "moment";
 
-ReactGA.initialize('G-WMK4HE7N2W');
+ReactGA.initialize('UA-199624989-1');
 
 ReactGA.pageview(window.location.pathname + window.location.search);
 

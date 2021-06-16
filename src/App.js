@@ -3,7 +3,7 @@ import ReactGA, { OutboundLink } from "react-ga";
 import TextTransition, { presets } from "react-text-transition";
 import moment from "moment";
 
-ReactGA.initialize("G-0P5740NZY5");
+ReactGA.initialize('G-WMK4HE7N2W');
 
 function App() {
   const endDate = moment([2023, 4, 29]);
